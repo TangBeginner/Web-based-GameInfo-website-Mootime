@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Version1.4</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<!--using-FontAwesome-->
+<script src="https://kit.fontawesome.com/a627fa96ad.js" crossorigin="anonymous"></script>
+<!--icon-------------------------------------------->
+<link rel="shortcut icon" href="pic/MooTime.png"/>
+</head>
+<body>
+
+    <!--import nova cut font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Cut&family=Single+Day&display=swap" rel="stylesheet">
+
+    
+    <!------navigation-bar-------------------------->
+    <!--import font family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Version 1.4.0</span>
+  </div>
+
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THIS VERSION</span></h5>
+    <p>Moo Time 1.4.0 was released on 26 November 2021.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i><b>New Content and Features</b></i></p>
+      <p>Added movie theater unlocked in late game, with related content and features.</p>
+        <p>Added 14-heart events for every spouse.</p>
+          <p>Added new events and dialogue (including a new heart event for Caroline).</p>
+            <p>Added clothing items equipped on the player (replaces former clothing appearance options).</p>
+              <p>Added clothes tailoring and dyeing.</p>
+                <p>Added 24 new hair styles, including bald heads.</p>
+                  <p>Added Four Corners farm map (meant for co-op, divides the land into four areas with their own perks).</p>
+                    <p>Added Fish Ponds to breed fish and produce items.</p>
+      
+    </div>
+    <img src="./pic/888.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <div class="w3-panel w3-leftbar w3-light-grey">
+        <br>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="fixes">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CHANGES AND FIXES</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openFix(event, 'changes');" id="myLink">
+        <div class="w3-col s6 tablink">Changes</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openFix(event, 'fixed');">
+        <div class="w3-col s6 tablink">Fixes</div>
+      </a>
+    </div>
+
+    <div id="changes" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Multiplayer changes</h5>
+      <p class="w3-text-grey">Added optional separate money in multiplayer.</p>
+        <p class="w3-text-grey">Added support for private chat messages.</p>
+          <p class="w3-text-grey">Added more multiplayer "server messages".</p><br>
+
+      <h5>Quality of life changes</h5>
+      <p class="w3-text-grey">Added ability to rearrange the museum artifacts (without donating a new one).</p>
+      <p class="w3-text-grey">Added ability to reread received letters anytime via the collections tab.</p>
+        <p class="w3-text-grey">Added notification when a tool being upgraded is ready.</p><br>
+
+        <h5>Other changes</h5>
+        <p class="w3-text-grey">Various copyediting, improved text, tweaked sprites, and tweaked map tiles.</p>
+        <p class="w3-text-grey">Made some optimizations that may improve performance on some machines/platforms or in some cases.</p>
+          <p class="w3-text-grey">Added an open sprite to the fridge.</p><br>
+    </div>
+
+    <div id="fixed" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Fixes for gameplay</h5>
+      <p class="w3-text-grey">Fixed rare issue where no ladder would spawn on a mine floor.</p>
+      <p class="w3-text-grey">Fixed certain artifacts not spawning as intended.</p>
+        <p class="w3-text-grey">Fixed invisible, interactable elevators on treasure floors of the Skull Cavern.</p><br>
+    
+      <h5>Fixes for player interaction</h5>
+      <p class="w3-text-grey">Fixed horses being unmountable if they're very close to a pet.</p>
+      <p class="w3-text-grey">Fixed being able to trash items from the crafting menu even though the trash can is invisible.</p>
+        <p class="w3-text-grey">Fixed answering dialogues on a small screen causing the cursor to interact with the toolbar.</p><br>
+    
+      <h5>Fixes for NPCs</h5>
+      <p class="w3-text-grey">Fixed issue where Vincent could get stuck on a flower barrel during the flower dance.</p>
+      <p class="w3-text-grey">Fixed Bouncer just saying "Hi." instead of his unique line.</p>
+      <p class="w3-text-grey">Fixed Penny not having her own introductory line.</p><br>
+</div>
+
+<div>
+    <br>
+    <p>Further changes were later released without changing the version number.</p>
+</div>
+<!-- End page content -->
+</div>
+
+
+<script>
+// Tabbed Fix
+function openFix(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+<style>
+    
+    body, html {
+      height: 100%;
+      font-family: Single Day;
+    }
+    
+    .bgimg {
+      background-position: center;
+      background-size: cover;
+      background-image: url("./pic/777.jpg");
+      min-height: 75%;
+    }
+    
+    .fixes {
+      display: none;
+    }
+
+    </style>
+
+</body>
+</html>

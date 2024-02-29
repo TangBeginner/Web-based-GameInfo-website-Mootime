@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>REPORT 1.5 MOBILE ISSUES HERE!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<!--using-FontAwesome-->
+<script src="https://kit.fontawesome.com/a627fa96ad.js" crossorigin="anonymous"></script>
+<!--icon-------------------------------------------->
+<link rel="shortcut icon" href="pic/MooTime.png"/>
+</head>
+<body>
+
+    <!--import nova cut font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Cut&family=Single+Day&display=swap" rel="stylesheet">
+
+    
+    <!------navigation-bar-------------------------->
+    <!--import font family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">REPORT 1.5 MOBILE ISSUES HERE!</span>
+  </div>
+
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THIS REPORT</span></h5>
+    <p>The 1.5 update is out on mobile devices now, so we can start collecting reports of any potential problems. If you encounter any issue in this update, please give as much information as you can. Then we have the game updates listed to show the fixed bugs and to show you which version of the game you may be on if you're having certain issues.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i><b>Game Updates</b></i></p>
+      <p>The updates "roll out", which means that only a small % of players (randomly chosen) will have it at first, which ramp up afterwards. If you don't yet have these updates, you will, so please be patient!</p>
+    </div>
+    <img src="./pic/555.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="fixes">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE FIXES</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openFix(event, '1.5.6.32');" id="myLink">
+        <div class="w3-col s6 tablink">1.5.6.32</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openFix(event, '1.5.6.33');">
+        <div class="w3-col s6 tablink">1.5.6.33</div>
+      </a>
+    </div>
+
+    <div id="1.5.6.32" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Fixed</h5>
+      <p class="w3-text-grey">-Fixed crash involving children</p>
+      <p class="w3-text-grey">-Auto-grabber inventories now function properly</p>
+      <p class="w3-text-grey">-Fixed toolbar being stuck when using toolbar padding</p>
+      <p class="w3-text-grey">-Fixed Junimos not depositing their harvests into the hut</p>
+      <p class="w3-text-grey">-Virtual buttons no longer draw during intro</p>
+      <p class="w3-text-grey">-Horse is now easier to dismount</p>
+      <p class="w3-text-grey">-Foraging while on a horse is now re-enabled</p>
+      <p class="w3-text-grey">-Fixed issue where you could get stuck outside the map if you dismounted a horse</p>
+      <p class="w3-text-grey">-Fixed inability to tap geodes onto Clint's anvil</p>
+      <p class="w3-text-grey">-Increased size of Korean text</p>
+      <p class="w3-text-grey">-Added Chinese language back into the game</p><br>
+
+    </div>
+
+    <div id="1.5.6.33" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Fixed</h5>
+      <p class="w3-text-grey">-Fixed crash if you "emergency load" and have junimo huts</p>
+      <p class="w3-text-grey">-Fixed issue where the horse was missing after an emergency load</p>
+      <p class="w3-text-grey">-Fixed issue where shipping bin deposits would be lost after an emergency load</p>
+      <p class="w3-text-grey">-Fixed animals getting stuck outside and becoming upset</p>
+      <p class="w3-text-grey">-Fixed issue where cursors were showing up in menus</p>
+      <p class="w3-text-grey">-Fixed inability to advance text during the "Solarian Chronicles" event</p>
+      <p class="w3-text-grey">-Fixed issue where auto-grabbers were erroneously showing as "full"</p>
+      <p class="w3-text-grey">-Restored the missing starter quest</p>
+      <p class="w3-text-grey">-Tapping on supply crates now auto-selects an appropriate tool</p>
+      <p class="w3-text-grey">-Fixed pathfinding issue with the secret fishing spot in the Beach Farm</p>
+      <p class="w3-text-grey">-"Add items to stacks" button added to chests</p>
+      <p class="w3-text-grey">-Fixed issue where NPC's were found in strange places, and walking where they aren't supposed to</p><br>
+    
+</div>
+
+<div>
+    <br>
+    <p>Further changes were later released without changing the version number.</p>
+</div>
+<!-- End page content -->
+</div>
+
+
+<script>
+// Tabbed Fix
+function openFix(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+<style>
+    
+    body, html {
+      height: 100%;
+      font-family: Single Day;
+    }
+    
+    .bgimg {
+      background-position: center;
+      background-size: cover;
+      background-image: url("./pic/666.jpg");
+      min-height: 75%;
+    }
+    
+    .fixes {
+      display: none;
+    }  
+
+    </style>
+
+
+</body>
+</html>

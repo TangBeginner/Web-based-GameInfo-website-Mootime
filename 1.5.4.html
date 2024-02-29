@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Version1.5.4</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<!--using-FontAwesome-->
+<script src="https://kit.fontawesome.com/a627fa96ad.js" crossorigin="anonymous"></script>
+<!--icon-------------------------------------------->
+<link rel="shortcut icon" href="pic/MooTime.png"/>
+</head>
+<body>
+
+    <!--import nova cut font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Cut&family=Single+Day&display=swap" rel="stylesheet">
+
+    
+    <!------navigation-bar-------------------------->
+    <!--import font family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Version 1.5.4</span>
+  </div>
+
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THIS VERSION</span></h5>
+    <p>Moo Time 1.5.4 was released on 01 January 2022 for mod authors, announced in the forums on 01 January 2022, and released to all players on 01 January 2022.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i><b>Changes</b></i></p>
+      <p>Pam no longer visits the Island resort on Sandy's birthday.</p>
+      <p><i>The Moo Time Fair shop no longer sells multiples of the randomly chosen items.</i></p>
+    </div>
+    <img src="./pic/444.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <div class="w3-panel w3-leftbar w3-light-grey">
+        <br>
+        <p><i><b>Quality of life changes</b></i></p>
+        <p>Many in-game settings now remember their last value when you start a new save. (Some settings like zoom level, gamepad mode, and multiplayer server privacy aren't copied over.)</p>
+        <p>The in-game time is now shown on the upper-right hand corner of the screen when playing Journey of the Prairie King in multiplayer.</p>
+      </div>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="fixes">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE FIXES</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openFix(event, 'general');" id="myLink">
+        <div class="w3-col s6 tablink">General Fixes</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openFix(event, 'multi');">
+        <div class="w3-col s6 tablink">Multiplayer Fixes</div>
+      </a>
+    </div>
+
+    <div id="general" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Fixed Rare Crush</h5>
+      <p class="w3-text-grey">Fixed a rare crash that could occur when watching an event in multiplayer as the clock hits midnight or 1am.</p><br>
+
+      <h5>Fixed Sounds</h5>
+      <p class="w3-text-grey">Fixed the sound of fiber crops being harvested being audible when you're in another area.</p><br>
+    </div>
+
+    <div id="multi" class="w3-container menu w3-padding-48 w3-card">
+      <h5> Lucky Rings</h5>
+      <p class="w3-text-grey">Fixed lucky rings losing their luck bonus overnight.</p><br>
+    
+      <h5>Softlock</h5>
+      <p class="w3-text-grey">Fixed softlock when fishing with multiple rods in your inventory after catching a treasure and casting from a different rod. This fixes the common fishing rod softlock next to Willy's house and during the Festival of Ice.</p><br>
+    
+      <h5>Issues</h5>
+      <p class="w3-text-grey">Fixed issue where the buttons in the CalicoJack and Calico Spin minigames wouldn't respond to controller input if the UI scale setting didn't match zoom level setting.</p>
+      <p class="w3-text-grey">Fixed issue where bombing certain floor tiles in the quarry would spawn items.</p>
+      <p class="w3-text-grey">Fixed a rare issue where a charged hoe could dislodge a non-empty chest and destroying its contents if it was placed in a specific configuration next to other chests.</p><br>
+</div>
+
+<div>
+    <br>
+    <p>Further changes were later released without changing the version number.</p>
+</div>
+<!-- End page content -->
+</div>
+
+
+<script>
+// Tabbed Fix
+function openFix(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+<style>
+    
+    body, html {
+      height: 100%;
+      font-family: Single Day;
+    }
+    
+    .bgimg {
+      background-position: center;
+      background-size: cover;
+      background-image: url("./pic/333.jpg");
+      min-height: 75%;
+    }
+    
+    .fixes {
+      display: none;
+    }
+
+    </style>
+
+</body>
+</html>

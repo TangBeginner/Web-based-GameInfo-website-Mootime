@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Version1.3</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<!--using-FontAwesome-->
+<script src="https://kit.fontawesome.com/a627fa96ad.js" crossorigin="anonymous"></script>
+<!--icon-------------------------------------------->
+<link rel="shortcut icon" href="pic/MooTime.png"/>
+</head>
+<body>
+
+    <!--import nova cut font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Cut&family=Single+Day&display=swap" rel="stylesheet">
+
+    
+    <!------navigation-bar-------------------------->
+    <!--import font family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Version 1.3.0</span>
+  </div>
+
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THIS VERSION</span></h5>
+    <p>Moo Time 1.3.0 was released on 17 August 2021.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i><b>New Content</i></p>
+        <p>Added Night Market event.</p>
+            <p>Added Community Upgrade to Carpenter's Shop.</p>
+            <p>Added buildable shipping bins to Carpenter's Shop.</p>
+            <p>Added Abigail encounter at level 20 in the mines.</p>
+            <p>Added new heart events for Jas, Linus, Pam, Vincent, and Willy.</p>
+            <p>Added new heart events when player has given a bouquet to all bachelors or bachelorettes.</p>
+            <p>Added rare treasure chest rooms in Skull Cavern.</p>
+            <p>Added Fish Ponds to breed fish and produce items.</p><br>
+      
+    </div>
+    <img src="./pic/101010.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <div class="w3-panel w3-leftbar w3-light-grey">
+        <br>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="fixes">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CHANGES AND FIXES</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openFix(event, 'changes');" id="myLink">
+        <div class="w3-col s6 tablink">Changes</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openFix(event, 'fixed');">
+        <div class="w3-col s6 tablink">Fixes</div>
+      </a>
+    </div>
+
+    <div id="changes" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Balance changes</h5>
+      <p class="w3-text-grey">Increased purchase price of wood, stone, ores, and coal in the year 2+. The gold received for selling them is unchanged.</p>
+        <p class="w3-text-grey">Reduced price of Tub o' Flowers from 1000g to 250g, and recipe from 2000g to 1000g.</p>
+          <p class="w3-text-grey">Breaking small tree stumps now provides +1 foraging XP.</p><br>
+
+      <h5>Other changes</h5>
+      <p class="w3-text-grey">Once the player reaches the mine bottom, the Dwarf will attend weddings.</p>
+      <p class="w3-text-grey">Tweaked several seed packet sprites.</p>
+      <p class="w3-text-grey">Tweaked Mr. Qi dialogue portrait.</p>
+        <p class="w3-text-grey">You can now add Mayor Lewis' shorts to the Luau soup.</p>
+        <p class="w3-text-grey">You can now put Fire Quartz in the Furnace to produce Refined Quartz.</p>
+        <p class="w3-text-grey">You can now refill a Watering Can at the kitchen sink.</p>
+        <p class="w3-text-grey">Fireplaces are now furniture, so you can move them around and buy different fireplaces.</p>
+        <p class="w3-text-grey">Fruit Trees cannot be planted on top of decorations in the Greenhouse border, or in the corners of the Greenhouse.</p>
+        <p class="w3-text-grey">Golden Pumpkin is now a universal love (instead of universal hate).</p><br>
+    </div>
+
+    <div id="fixed" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Bug fixes</h5>
+       <p class="w3-text-grey">Fixed crops harvested with a scythe not giving XP.</p>
+        <p class="w3-text-grey">Fixed bee houses always giving wild honey when used on custom farms.</p>
+        <p class="w3-text-grey">Fixed seeds planted out of season disappearing.</p>
+        <p class="w3-text-grey">Fixed player collapse being cancelled when they open the journal.</p>
+        <p class="w3-text-grey">Fixed animal mood & happiness bugs.</p>
+        <p class="w3-text-grey">Fixed crystalarium item swap exploit.</p>
+        <p class="w3-text-grey">Fixed furniture being usable to complete bundles.</p>
+        <p class="w3-text-grey">Fixed some recipes allowing Milk, but not Large Milk.</p>
+        <p class="w3-text-grey">Fixed crash that occurred after 596 hours of gameplay.</p>
+        <p class="w3-text-grey">Fixed staircase being spawned on mine level 120 when a placed object is destroyed.</p>
+        <p class="w3-text-grey">Several grammar/spelling fixes.</p>
+        <p class="w3-text-grey">Fixed Wheat Seeds and Bok Choy Seeds descriptions in Brazilian-Portugese.</p>
+        <p class="w3-text-grey">Fixed spring sign on bathhouse in Chinese.</p>
+
+</div>
+
+<div>
+    <br>
+    <p>Further changes were later released without changing the version number.</p>
+</div>
+<!-- End page content -->
+</div>
+
+
+<script>
+// Tabbed Fix
+function openFix(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+<style>
+    
+    body, html {
+      height: 100%;
+      font-family: Single Day;
+    }
+    
+    .bgimg {
+      background-position: center;
+      background-size: cover;
+      background-image: url("./pic/999.jpg");
+      min-height: 75%;
+    }
+    
+    .fixes {
+      display: none;
+    }
+
+    </style>
+
+</body>
+</html>

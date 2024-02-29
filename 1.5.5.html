@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Version1.5.5</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<!--using-FontAwesome-->
+<script src="https://kit.fontawesome.com/a627fa96ad.js" crossorigin="anonymous"></script>
+<!--icon-------------------------------------------->
+<link rel="shortcut icon" href="pic/MooTime.png"/>
+</head>
+<body>
+
+    <!--import nova cut font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Cut&family=Single+Day&display=swap" rel="stylesheet">
+
+    
+    <!------navigation-bar-------------------------->
+    <!--import font family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Version 1.5.5</span>
+  </div>
+
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THIS VERSION</span></h5>
+    <p>Moo Time 1.5.5 was released to the Steam beta branch on 17 January 2022 for mod authors, announced in the forums on 17 January 2022, and released to all players on 30 January 2022.</p>
+    <p>Hotfixes were applied on 10 February 2022, 15 Febrruay 2022, and 17 Febrruay 2022.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i><b>Architectural changes</b></i></p>
+      <p>Added support for Xbox Game Pass.</p>
+      <p><i>This migrates the game on Windows from .NET Framework 4.5.2 to .NET 5. You may need to launch the vanilla game once through Steam/GOG to install the new dependencies.</i></p>
+    </div>
+    <img src="./pic/222.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <div class="w3-panel w3-leftbar w3-light-grey">
+        <br>
+        <p><i><b>Quality of life changes</b></i></p>
+        <p>Many in-game settings now remember their last value when you start a new save. (Some settings like zoom level, gamepad mode, and multiplayer server privacy aren't copied over.)</p>
+        <p>The in-game time is now shown on the upper-right hand corner of the screen when playing Journey of the Prairie King in multiplayer.</p>
+      </div>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="fixes">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE FIXES</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openFix(event, 'general');" id="myLink">
+        <div class="w3-col s6 tablink">General Fixes</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openFix(event, 'local');">
+        <div class="w3-col s6 tablink">Localization Fixes</div>
+      </a>
+    </div>
+
+    <div id="general" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Fixed Typo</h5>
+      <p class="w3-text-grey">Fixed typos in the French localization.</p>
+      <p class="w3-text-grey">Fixed a typo in Livin' Off The Land that incorrectly states that Super Cucumber can be caught in Winter.</p><br>
+    
+      <h5>Fixed Characters</h5>
+      <p class="w3-text-grey">Fixed incorrect '\' characters in various events in the Hungarian localization.</p><br>
+    </div>
+
+    <div id="local" class="w3-container menu w3-padding-48 w3-card">
+      <h5> Radioactive Bars</h5>
+      <p class="w3-text-grey">Fixed radioactive bars not affected by the Blacksmith profession.</p><br>
+    
+      <h5>Garden Pots</h5>
+      <p class="w3-text-grey">Fixed garden pots clearing their fertilizers when a crop is harvested.</p><br>
+    
+      <h5>Multiplayer Hosts</h5>
+      <p class="w3-text-grey">Fixed multiplayer hosts registering their lobbies before fully loading a save, causing the games not to appear in the multiplayer games list.</p>
+    
+</div>
+
+<div>
+    <br>
+    <p>Further changes were later released without changing the version number.</p>
+</div>
+<!-- End page content -->
+</div>
+
+
+<script>
+// Tabbed Fix
+function openFix(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+<style>
+    
+    body, html {
+      height: 100%;
+      font-family: Single Day;
+    }
+    
+    .bgimg {
+      background-position: center;
+      background-size: cover;
+      background-image: url("./pic/111.jpg");
+      min-height: 75%;
+    }
+    
+    .fixes {
+      display: none;
+    }
+
+    </style>
+
+</body>
+</html>

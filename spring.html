@@ -1,0 +1,352 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring</title>
+
+    <!--stylesheet-------------------------------------->
+    <link rel="stylesheet" type="text/css" href="homepage.css">
+    <link rel="stylesheet" href="spring.css">
+
+    <!--using-FontAwesome-->
+    <script src="https://kit.fontawesome.com/a627fa96ad.js" crossorigin="anonymous"></script>
+
+    
+    
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+    <script src="spring.js"></script>
+
+        <!--import nova cut font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nova+Cut&family=Single+Day&display=swap" rel="stylesheet">
+    
+        
+        <!------navigation-bar-------------------------->
+        <!--import font family-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    
+        <nav class="navigation">
+            <!--logo----->
+            <a href="#" class="logo">
+                <img src="pic/logo2.png" alt="logo">
+            </a>
+    
+            <!---menu-->
+            <ul class="menu">
+                <li>
+                    <a href="homepage.html"><i class="fa-solid fa-house"></i></i> HOME</a>
+                </li>
+    
+                <li>
+                    <a href="community.html"> <i class="fa-sharp fa-solid fa-comments"></i> COMMUNITY</a>
+                </li>
+    
+                  <li>
+                <div class="dropdown">
+                    <a href="highlight.html"> <i class="fa-regular fa-star"></i> HIGHLIGHTS</a>
+                    <div class="dropdown-content">
+                    <p><input id="spring" type="button" onclick="window.location.href='spring.html';" value="Spring"></p>
+                    <p><input id="summer" type="button" onclick="window.location.href='summer.html';" value="Summer"><p>
+                    <p><input id="fall" type="button" onclick="window.location.href='autumn.html';" value="Fall"><p>
+                    <p><input id="winter" type="button" onclick="window.location.href='winter.html';" value="Winter"></p>
+            </li>
+    
+                <li>
+                    <a href="download.html"> <i class="fa-solid fa-arrow-down"></i> DOWNLOAD</a>
+                </li>
+    
+                <li>
+                    <a href="#search"> <i class="fa-solid fa-magnifying-glass"></i></i> SEARCH</a>
+                </li>
+    
+                <li>
+                    <a href="login.html"> <i class="fa fa-user"></i> LOGIN</a>
+                </li>
+            </ul>
+            </nav>
+        <!--navigation-end------------------->
+
+
+        <div class="moon"></div>
+
+            <div class="sticky-sidebar">
+        <h2>Season</h2>
+        <l>
+            <li><a href="spring.html">Spring</a></li>
+            <li><a href="summer.html">Summer</a></li>
+            <li><a href="autumn.html">Fall</a></li>
+            <li><a href="winter.html">Winter</a></li>
+        </l>
+            </div>
+
+        <div class="Text-container">
+            <div class="box">
+                <h1>Spring</h1>
+                    <p>Spring is the season when players first begin the game. It's followed by Summer and preceded by Winter.
+                        In Spring, the grass is green. Trees regain their leaves and bloom, and pink petals blow through the air on some days. 
+                        There is also a variety of crops,  fish which only appear during this season.
+                        </p>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="collapsible">
+                <input type="checkbox" id="collapsible-head">
+                <label for="collapsible-head"><h1>Crops</h1>
+                </label>
+                <div class="collapsible-tx">
+                    <h1>Below are the crops that only available in Spring season.</h1>
+                    <h2>Potato <span><img src="pic/Potato.png" alt="Potato"></span></h2>
+                    <p>The Potato is a vegetable crop that grows from Potato Seeds after 6 days.</p>
+    
+                    <table class="wikitable sortable roundedborder jquery-tablesorter" style="text-align: center;">
+    
+                        <thead>
+                            <tr>
+                                <th>Crop</th>
+                                <th>Seed Price</th>
+                                <th >Days<br>to Grow</th>
+                                <th>Maximum Harvests<br>per Season</th>
+                                <th>Sells For</th>
+                                <th >Gold/Day
+                                </th>
+                            </tr>
+                        </thead>
+    
+                        <tbody>
+                            <tr>
+                                <td style="text-align: left;"><span class="nametemplate"><img alt="Potato" src="pic/Potato.png" decoding="async" width="24" height="24"> <a style="font-family: 'Quicksand', sans-serif;" href="#" title="Potato">Potato</a></span></td>
+                                <td data-sort-value="50"><span style="font-family: 'Quicksand', sans-serif;" class="no-wrap" data-sort-value="50"><img alt="Gold" src="pic/moogold.png" decoding="async" width="18" height="18" >50g</span></td>
+                                <td data-sort-value="6">6 days</td>
+                                <td>4</td>
+                                <td data-sort-value="80"><span style="font-family: 'Quicksand', sans-serif;" class="no-wrap" data-sort-value="50"><img alt="Gold" src="pic/moogold.png" decoding="async" width="18" height="18" >80g</span></td>
+                                <td data-sort-value="5"><span style="font-family: 'Quicksand', sans-serif;" class="no-wrap" data-sort-value="2.86"><img alt="Gold" src="pic/moogold.png" decoding="async" width="18" height="18" >5g</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot></tfoot>
+                    </table>
+                </div>
+                <div class="collapsible-tx">
+                    <h2>Garlic <span><img src="pic/Garlic.png" alt="Garlic"></span></h2>
+                    <p>Garlic is a vegetable crop that grows from Garlic Seeds after 4 days.</p>
+    
+                    <table class="wikitable sortable roundedborder jquery-tablesorter" style="text-align: center;">
+    
+                        <thead>
+                            <tr>
+                                <th>Crop</th>
+                                <th>Seed Price</th>
+                                <th >Days<br>to Grow</th>
+                                <th>Maximum Harvests<br>per Season</th>
+                                <th>Sells For</th>
+                                <th >Gold/Day
+                                </th>
+                            </tr>
+                        </thead>
+    
+                        <tbody>
+                            <tr>
+                                <td style="text-align: left;"><span class="nametemplate"><img alt="Garlic" src="pic/Garlic.png" decoding="async" width="24" height="24"> <a style="font-family: 'Quicksand', sans-serif;" href="#" title="Garlic">Garlic</a></span></td>
+                                <td data-sort-value="40"><span style="font-family: 'Quicksand', sans-serif;" class="no-wrap" data-sort-value="50"><img alt="Gold" src="pic/moogold.png" decoding="async" width="18" height="18" >40g</span></td>
+                                <td data-sort-value="4">4 days</td>
+                                <td>6</td>
+                                <td data-sort-value="60"><span style="font-family: 'Quicksand', sans-serif;" class="no-wrap" data-sort-value="60"><img alt="Gold" src="pic/moogold.png" decoding="async" width="18" height="18" >60g</span></td>
+                                <td data-sort-value="5"><span style="font-family: 'Quicksand', sans-serif;" class="no-wrap" data-sort-value="2.86"><img alt="Gold" src="pic/moogold.png" decoding="async" width="18" height="18" >5g</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot></tfoot>
+                    </table>
+                </div>
+                <div class="collapsible-tx">
+                    <h2>Cauliflower <span><img src="pic/Cauliflower.png" alt="Cauliflower"></span></h2>
+                    <p>Cauliflower is a vegetable crop that grows from Cauliflower Seeds after 12 days. 
+                        Cauliflower is one of only three crops that can grow into a giant crop.</p>
+    
+                    <table class="wikitable sortable roundedborder jquery-tablesorter" style="text-align: center;">
+    
+                        <thead>
+                            <tr>
+                                <th>Crop</th>
+                                <th>Seed Price</th>
+                                <th >Days<br>to Grow</th>
+                                <th>Maximum Harvests<br>per Season</th>
+                                <th>Sells For</th>
+                                <th >Gold/Day
+                                </th>
+                            </tr>
+                        </thead>
+    
+                        <tbody>
+                            <tr>
+                                <td style="text-align: left;"><span class="nametemplate"><img alt="Potato" src="pic/Cauliflower.png" decoding="async" width="24" height="24"> <a style="font-family: 'Quicksand', sans-serif;" href="#" title="Potato">Cauliflower</a></span></td>
+                                <td data-sort-value="80"><span style="font-family: 'Quicksand', sans-serif;" class="no-wrap" data-sort-value="50"><img alt="Gold" src="pic/moogold.png" decoding="async" width="18" height="18" >80g</span></td>
+                                <td data-sort-value="12">12 days</td>
+                                <td>2</td>
+                                <td data-sort-value="175"><span style="font-family: 'Quicksand', sans-serif;" class="no-wrap" data-sort-value="175"><img alt="Gold" src="pic/moogold.png" decoding="async" width="18" height="18" >175g</span></td>
+                                <td data-sort-value="7.92">≈<span style="font-family: 'Quicksand', sans-serif;" class="no-wrap" data-sort-value="7.92"><img alt="Gold" src="pic/moogold.png" decoding="async" width="18" height="18" >7.92g</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot></tfoot>
+                    </table>
+                </div>
+            </div>
+
+            <div class="collapsible">
+                <input type="checkbox" id="collapsible-second">
+                <label for="collapsible-second"><h1>Fishes</h1>
+                </label>
+                <div class="collapsible-tx">
+                    <p>Certain fish can be caught only during specific seasons. 
+                        These are the fishes that you can catch only during Spring season.</p>    
+    
+                    <table class="wikitable2 sortable roundedborder jquery-tablesorter" style="text-align: center;">
+    
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                            <th>Location</th>
+                            <th>Time</th>
+                            <th>Weather</th>
+                            <th>Size (inches)</th>
+                            <th>Base XP</th>
+                        </tr>
+                    </thead>
+    
+                    <tbody>
+                        <tr>
+                            <td><img alt="Anchovy" src="pic/Anchovy.png" decoding="async" width="48" height="48"></td>
+                            <td><a style="font-family: 'Quicksand', sans-serif;" href="#" title="Anchovy">Anchovy</a></td>
+                            <td>A small silver fish found in the ocean.</td>
+                            <td>
+                                <span data-sort-value="30">
+                                    <table class="no-wrap" style="border-spacing: 0;">
+                                        <tbody>
+                                            <tr>
+                                                <td><img alt="" src="pic/Anchovy.png" decoding="async" width="24" height="24"></td>
+                                                <td>30g</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </span>
+                            </td>
+                            <td>Ocean</td>
+                            <td class="no-wrap">Anytime</td>
+                            <td>
+                                <span style="display:inline; margin-right:0; white-space: nowrap; font-family: 'Quicksand', sans-serif;">
+                                    Any
+                                </span>
+                            </td>
+                            <td>1-17</td>
+                            <td>13</td>
+                        </tr>
+    
+                        <tr>
+                            <td><img alt="Catfish" src="pic/Catfish.png" decoding="async" width="48" height="48"></td>
+                            <td><a style="font-family: 'Quicksand', sans-serif;" href="#" title="Catfish">Catfish</a></td>
+                            <td>An uncommon fish found in streams.</td>
+                            <td>
+                                <span data-sort-value="200">
+                                    <table class="no-wrap" style="border-spacing: 0;">
+                                        <tbody>
+                                            <tr>
+                                                <td><img alt="" src="pic/Catfish.png" decoding="async" width="24" height="24"></td>
+                                                <td>200g</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </span>
+                            </td>
+                            <td>Ocean</td>
+                            <td class="no-wrap">6am – 12am</td>
+                            <td>
+                                <span style="display:inline; margin-right:0; white-space: nowrap; font-family: 'Quicksand', sans-serif;">
+                                    <img alt="Raining" src="pic/Rain.png" decoding="async" width="16" height="16">&nbsp;<a style="font-family: 'Quicksand', sans-serif;" href="#" title="Weather">Rain</a>
+                                </span>
+                            </td>
+                            <td>12-73</td>
+                            <td>28</td>
+                        </tr>
+    
+                        <tr>
+                            <td><img alt="Sunfish" src="pic/Sunfish.png" decoding="async" width="48" height="48"></td>
+                            <td><a style="font-family: 'Quicksand', sans-serif;" href="#" title="Sunfish">Sunfish</a></td>
+                            <td>A common river fish.</td>
+                            <td>
+                                <span data-sort-value="30">
+                                    <table class="no-wrap" style="border-spacing: 0;">
+                                        <tbody>
+                                            <tr>
+                                                <td><img alt="" src="pic/Sunfish.png" decoding="async" width="24" height="24"></td>
+                                                <td>30g</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </span>
+                            </td>
+                            <td>River (Town+Forest)</td>
+                            <td class="no-wrap">6am - 7pm</td>
+                            <td>
+                                <span style="display:inline; margin-right:0; white-space: nowrap; font-family: 'Quicksand', sans-serif;">
+                                    <img alt="Sunny" src="pic/Sun.png" decoding="async" width="16" height="16">&nbsp;<a style="font-family: 'Quicksand', sans-serif;" href="#" title="Weather">Sun</a>
+                                </span>
+                                <span style="display:inline; margin-right:0; white-space: nowrap; font-family: 'Quicksand', sans-serif;">
+                                    <img alt="Wind" src="pic/Wind.png" decoding="async" width="16" height="16">&nbsp;<a style="font-family: 'Quicksand', sans-serif;" href="#" title="Weather">Wind</a>
+                                </span>
+                            </td>
+                            <td>5-16</td>
+                            <td>13</td>
+                        </tr>
+    
+                    </tbody>
+    
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+        <a href="#" class="to-top">
+            <i class="fa-solid fa-chevron-up"></i>
+        </a>
+   
+    <script src="./totop.js"></script>
+
+        <footer class="footer">
+            <div class="footer-container">
+                    <div class="footer-social">
+                        <a href=" "><i class="fab fa-facebook-f"></i></a>
+                        <a href=" "><i class="fab fa-instagram"></i></a>
+                        <a href=" "><i class="fab fa-twitter"></i></a>
+                    </div>
+        
+                    <div class="footer-middle">
+                        <h4>MooTime Copyright © 2022. All rights reserved.</h4>
+                    </div>
+        
+                    <div class="footer-contact-us">
+                        <a href="contactus.html"><i class="fa-solid fa-phone-rotary"></i>Contact us</a>
+                    </div>
+        
+            </div>
+        
+        </footer>
+
+</body>
+
+</html>

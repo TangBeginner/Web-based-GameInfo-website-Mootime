@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winter</title>
+    <link rel="stylesheet" href="./winter.css">
+    <link rel="shortcut icon" href="pic/MooTime.png"/>
+
+
+    <!--using-FontAwesome-->
+    <script src="https://kit.fontawesome.com/a627fa96ad.js" crossorigin="anonymous"></script>
+</head>
+
+<style>
+
+</style>
+<body>
+    <!--import nova cut font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Cut&family=Single+Day&display=swap" rel="stylesheet">
+
+    
+    <!------navigation-bar-------------------------->
+    <!--import font family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+
+  <div id="snow"></div>
+    <nav class="navigation">
+        
+        <!--logo----->
+        <a href="#" class="logo">
+            <img src="pic/logo2.png" alt="logo">
+        </a>
+
+        <!---menu-->
+        <ul class="menu">
+            <li>
+                <a href="homepage.html"><i class="fa-solid fa-house"></i></i> HOME</a>
+            </li>
+
+            <li>
+                <a href="community.html"> <i class="fa-sharp fa-solid fa-comments"></i> COMMUNITY</a>
+            </li>
+
+              <li>
+                <div class="dropdown">
+                    <a href="highlight.html"> <i class="fa-regular fa-star"></i> HIGHLIGHTS</a>
+                    <div class="dropdown-content">
+                    <p><input id="spring" type="button" onclick="window.location.href='spring.html';" value="Spring"></p>
+                    <p><input id="summer" type="button" onclick="window.location.href='summer.html';" value="Summer"><p>
+                    <p><input id="fall" type="button" onclick="window.location.href='autumn.html';" value="Fall"><p>
+                    <p><input id="winter" type="button" onclick="window.location.href='winter.html';" value="Winter"></p>
+            </li>
+
+            <li>
+                <a href="#download"> <i class="fa-solid fa-arrow-down"></i> DOWNLOAD</a>
+            </li>
+
+            <li>
+                <a href="#search"> <i class="fa-solid fa-magnifying-glass"></i></i> SEARCH</a>
+            </li>
+
+            <li>
+                <a href="login.html"> <i class="fa fa-user"></i> LOGIN</a>
+            </li>
+        </ul>
+        </nav>
+    
+    <!--navigation-end------------------->
+    <!--main------------------->
+    <div class="space">
+    </div>
+
+        <div class="sticky-sidebar">
+        <h2>Season</h2>
+        <l>
+            <li><a href="spring.html">Spring</a></li>
+            <li><a href="summer.html">Summer</a></li>
+            <li><a href="autumn.html">Fall</a></li>
+            <li><a href="winter.html">Winter</a></li>
+        </l>
+        </div>
+
+    <div class="Text-container">
+        <div class="box">
+            <h1>Winter</h1>
+            <p>Winter is the fourth season and it is followed by Spring and preceded by Autumn.
+                <p>Winter is unique amongst the seasons in that no outdoors Crops apart from Winter Seeds and Fiber Seeds will grow, and all Grass, Weeds, and most tilled soil
+                    will all be removed at the start of the season. However, the reduced intensity of farming makes it an excellent season for fishing too, Winter is tied with Summer for most birthdays in a season.
+                </p>
+                <p>Additionally, due to the lack of grass and weeds, Fiber is more difficulty to obtain outdoors, but you can still get fiber by planting Fiber Seeds.</p>
+        </div>
+    </div>
+    
+    <div class="wrapper">
+        <div class="collapsible">
+            <input type="checkbox" id="collapsible-head">
+            <label for="collapsible-head"><h1>Crops</h1>
+            </label>
+            <div class="collapsible-tx">
+                <h2>Winter season is quite different from the other 3 season since 
+                    there are no plantable crops in Winter with the exception of Winter Seeds and Fiber Seeds.</h2>
+
+                <table class="wikitable roundedborder">
+                    <tbody>
+                        <tr>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+
+                    <tr>
+                        <td><div class="center"><div class="floatnone"><img alt="Winter Seeds" src="pic/Winter_Seeds.png" decoding="async" width="48" height="48"></div></div></td>
+                        <td class="no-wrap">Winter Seeds</td>
+                        <td>An assortment of wild winter seeds.</td>
+                    </tr>
+
+                    <tr>
+                        <td><div class="center"><div class="floatnone"><img alt="Fiber Seeds" src="pic/Fiber_Seeds.png" decoding="async" width="48" height="48"></div></div></td>
+                        <td>Fiber Seeds</td>
+                        <td>Plant these in any season. Does not require watering. Harvest with the scythe. Takes 7 days to grow.</td>
+                    </tr>
+                
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="collapsible">
+            <input type="checkbox" id="collapsible-second">
+            <label for="collapsible-second"><h1>Fishes</h1>
+            </label>
+            <div class="collapsible-tx">
+                <p>Certain fish can be caught only during specific seasons. 
+                    Note that listed below are the fishes that can only be catched during Summer.</p>    
+
+                <table class="wikitable2 sortable roundedborder jquery-tablesorter" style="text-align: center;">
+
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Location</th>
+                        <th>Time</th>
+                        <th>Weather</th>
+                        <th>Size (inches)</th>
+                        <th>Base XP</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td><img alt="Sardine" src="pic/Sardine.png" decoding="async" width="48" height="48"></td>
+                        <td><a style="font-family: 'Quicksand', sans-serif;" href="#" title="Sardine">Sardine</a></td>
+                        <td>A common ocean fish.</td>
+                        <td>
+                            <span data-sort-value="40">
+                                <table class="no-wrap" style="border-spacing: 0;">
+                                    <tbody>
+                                        <tr>
+                                            <td><img alt="" src="pic/Sardine.png" decoding="async" width="24" height="24"></td>
+                                            <td>40g</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </span>
+                        </td>
+                        <td>Ocean</td>
+                        <td class="no-wrap">6am – 7pm</td>
+                        <td>
+                            <span style="display:inline; margin-right:0; white-space: nowrap; font-family: 'Quicksand', sans-serif;">
+                                Any
+                            </span>
+                        </td>
+                        <td>1-13</td>
+                        <td>13</td>
+                    </tr>
+
+                    <tr>
+                        <td><img alt="Octopus" src="pic/Perch.png" decoding="async" width="48" height="48"></td>
+                        <td><a style="font-family: 'Quicksand', sans-serif;" href="#" title="Perch">Perch</a></td>
+                        <td>A freshwater fish of the winter.</td>
+                        <td>
+                            <span data-sort-value="55">
+                                <table class="no-wrap" style="border-spacing: 0;">
+                                    <tbody>
+                                        <tr>
+                                            <td><img alt="" src="pic/Perch.png" decoding="async" width="24" height="24"></td>
+                                            <td>55g</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </span>
+                        </td>
+                        <td>River (Town+Forest)
+                            Forest Pond
+                            Mountain Lake</td>
+                        <td class="no-wrap">Anytime</td>
+                        <td>
+                            <span style="display:inline; margin-right:0; white-space: nowrap; font-family: 'Quicksand', sans-serif;">
+                                Any
+                            </span>
+                        </td>
+                        <td>10-25</td>
+                        <td>14</td>
+                    </tr>
+
+                    <tr>
+                        <td><img alt="Dorado" src="pic/Squid.png" decoding="async" width="48" height="48"></td>
+                        <td><a style="font-family: 'Quicksand', sans-serif;" href="#" title="Squid">Squid</a></td>
+                        <td>A deep sea creature that can grow to enormous size.</td>
+                        <td>
+                            <span data-sort-value="80">
+                                <table class="no-wrap" style="border-spacing: 0;">
+                                    <tbody>
+                                        <tr>
+                                            <td><img alt="" src="pic/Squid.png" decoding="async" width="24" height="24"></td>
+                                            <td>80g</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </span>
+                        </td>
+                        <td>Ocean</td>
+                        <td class="no-wrap">6pm - 2am</td>
+                        <td>
+                            <span style="display:inline; margin-right:0; white-space: nowrap; font-family: 'Quicksand', sans-serif;">
+                                Any
+                            </span>
+                        </td>
+                        <td>12-49</td>
+                        <td>28</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+        </div>
+        </div>
+    </div>
+
+    <a href="#" class="to-top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
+   
+    <script src="./totop.js"></script>
+    
+
+
+    <!---footer------------------------------>
+    <div class="footer-container">
+        <div class="footer-social">
+            <a href=" "><i class="fab fa-facebook-f"></i></a>
+            <a href=" "><i class="fab fa-instagram"></i></a>
+            <a href=" "><i class="fab fa-twitter"></i></a>
+        </div>
+
+        <div class="footer-middle">
+            <h4>MooTime Copyright © 2022. All rights reserved.</h4>
+        </div>
+
+        <div class="footer-contact-us">
+            <a href="contactus.html"><i class="fa-solid fa-phone-rotary"></i>Contact us</a>
+        </div>
+    
+    </div>
+
+
+<script src="./PureSnow.js"></script>
+<script>
+
+</script>
+</body>
+
+</html>

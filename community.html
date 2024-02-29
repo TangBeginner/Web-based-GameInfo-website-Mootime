@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>community</title>
+    <link rel="stylesheet" href="./community.css">
+    <link rel="shortcut icon" href="pic/MooTime.png"/>
+
+
+    <!--using-FontAwesome-->
+    <script src="https://kit.fontawesome.com/a627fa96ad.js" crossorigin="anonymous"></script>
+    <!--import nova cut font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Cut&family=Single+Day&display=swap" rel="stylesheet">
+    
+</head>
+
+<style>
+
+</style>
+<body>
+
+  <div id="snow"></div>
+    <nav class="navigation">
+        
+        <!--logo----->
+        <a href="#" class="logo">
+            <img src="pic/logo2.png" alt="logo">
+        </a>
+
+        <!---menu-->
+        <ul class="menu">
+            <li>
+                <a href="homepage.html"><i class="fa-solid fa-house"></i></i> HOME</a>
+            </li>
+
+            <li>
+                <a href="community.html"> <i class="fa-sharp fa-solid fa-comments"></i> COMMUNITY</a>
+            </li>
+
+              <li>
+                <div class="dropdown">
+                    <a href="highlight.html"> <i class="fa-regular fa-star"></i> HIGHLIGHTS</a>
+                    <div class="dropdown-content">
+                    <p><input id="spring" type="button" onclick="window.location.href='spring.html';" value="Spring"></p>
+                    <p><input id="summer" type="button" onclick="window.location.href='summer.html';" value="Summer"><p>
+                    <p><input id="fall" type="button" onclick="window.location.href='autumn.html';" value="Fall"><p>
+                    <p><input id="winter" type="button" onclick="window.location.href='winter.html';" value="Winter"></p>
+            </li>
+
+            <li>
+                <a href="download.html"> <i class="fa-solid fa-arrow-down"></i> DOWNLOAD</a>
+            </li>
+
+            <li>
+                <a href="#search"> <i class="fa-solid fa-magnifying-glass"></i></i> SEARCH</a>
+            </li>
+
+            <li>
+                <a href="login.html"> <i class="fa fa-user"></i> LOGIN</a>
+            </li>
+        </ul>
+        </nav>
+    
+    <!--navigation-end------------------->
+    <!--main------------------->
+    
+    <div class="banner">
+            <div class="lg"></div>
+    </div>
+
+    <div class="event">
+            <div class="left">Event</div>
+            <div class="right"> <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                      <img src="./pic/dancing.png">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <img src="./pic/winter riding.png">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <img src="./pic/fishing.png">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="./pic/NightMarket.png">
+                      </div>
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                    
+                    </div>           
+
+                </div>  
+                </div>
+    </div>
+    <div class="belowevent">
+        <h1>Together We Make Difference</h1>
+    </div>
+    <div class="container_3_box">
+        <a href="./faq.html">
+        <div class="box_3"> 
+                <h1>FAQ</h1>
+                <img src="./pic/faq.png" >
+        </div>
+        </a>
+        <a href="./contactus.html">
+        <div class="box_3"> 
+                <h1>BUG REPORT</h1>
+                <img src="./pic/bug-removebg-preview.png" >
+        </div>
+        </a>            
+        <a href="./blog.html">
+        <div class="box_3"> 
+                <h1>BLOG</h1>
+                <img src="./pic/blog.png" >
+        </div>
+        </a>
+    </div>
+
+    <a href="#" class="to-top">
+      <i class="fa-solid fa-chevron-up"></i>
+    </a>
+ 
+    <script src="./totop.js"></script>
+
+    <!---footer------------------------------>
+    <div class="footer-container">
+        <div class="footer-social">
+            <a href=" "><i class="fab fa-facebook-f"></i></a>
+            <a href=" "><i class="fab fa-instagram"></i></a>
+            <a href=" "><i class="fab fa-twitter"></i></a>
+        </div>
+
+        <div class="footer-middle">
+            <h4>MooTime Copyright © 2022. All rights reserved.</h4>
+        </div>
+
+        <div class="footer-contact-us">
+            <a href="contactus.html"><i class="fa-solid fa-phone-rotary"></i>Contact us</a>
+        </div>
+    
+    </div>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+
+</html>

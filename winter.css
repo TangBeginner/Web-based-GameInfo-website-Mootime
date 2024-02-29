@@ -1,0 +1,316 @@
+@keyframes a {
+    from{
+    opacity: 1;
+    }
+    to{
+    opacity: 0;
+    display: none;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Single Day;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body {
+    width: 100vw;
+    background: linear-gradient(#24aef8, #0175c8);
+    overflow-x: hidden;
+}
+.banner{
+    height: 50vh;
+    background-color: black;
+}
+
+.snowflake {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(white, white); /* Workaround for Chromium's selective color inversion */
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px white);
+}
+
+.container { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; }
+
+/* .cover{
+    height: 100vh;
+} */
+/*==navigation-bar==================*/
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 100;
+    border: 1px solid rgba(0,0,0,0.5);
+    background-color: #352F2F;
+    font-family: 'Nova Cut' cursive;
+}
+.logo img{
+    width: 13%;
+    height: 13%;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li a{
+    margin:5px;
+    padding: 5px 20px;
+    color: white;
+    font-weight:500;
+    transition:all ease 0.3s;
+}
+
+.menu li a:hover{
+    color: #fffba9;
+    transition:all ease 0.3s;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #352F2F;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/*==navigation-bar-end=================*/
+.space{
+    width: 150px;
+    height: 150px; 
+}
+.Text-container{
+    color: black;
+}
+.Text-container .box{
+    margin: 50px;
+	margin-bottom: 5px;
+    padding: 50px;
+    border-radius: 20px;
+    width: 65vw;
+    background-color: rgba(246, 183, 183, 0.567);
+}
+
+.Text-container h1{
+	font-family: Nova Cut;
+}
+.Text-container p{
+	font-family: 'Inter', sans-serif;
+    padding: 10px;
+    border-radius: 20px;
+    width:100%;
+	font-size: 20px;
+}
+.wrapper {
+	padding: 50px;
+	justify-content: center;
+}
+.collapsible {
+	overflow: hidden;
+	font-weight: 500;
+    margin-bottom: 20px;
+}
+.collapsible input{
+	display: none;
+}
+.collapsible label{
+	position: relative;
+	font-weight: 600;
+	background: #F5DFA4;
+	box-shadow: 0 5px 11px rgba(0, 0, 0, 0.1), 0 4px 11px 0 rgba(0, 0, 0, 0.08);
+	color: black;
+	display: block;
+	margin-bottom: 10px;
+	cursor: pointer;
+	padding : 15px 35px;
+	border-radius: 4px;
+	width: 65vw;
+	z-index: 1;
+}
+.collapsible label:after{
+	content: "";
+	position: absolute;
+	right: 15px;
+	top: 25px;
+	width: 18px;
+	height: 18px;
+	background: url(https://upload.wikimedia.org/wikipedia/commons/8/8d/Feather-arrows-chevron-up.svg) no-repeat 0 0;
+	transition: 0.3s;
+}
+.collapsible input:checked + label:after{
+	transform: rotate(180deg);
+}
+.collapsible label h1{
+    font-family: Nova Cut;
+}
+.collapsible-tx{
+	width: 65vw;
+	max-height: 1px;
+	overflow: hidden;
+	border-radius: 4px;
+	line-height: 1.4;
+	position: relative;
+	top: -100%;
+	transition: all 0.3s ease;
+}
+.collapsible input:checked ~ .collapsible-tx{
+	max-height: 10000px;
+	padding-bottom: 25px;
+	background: rgba(237, 246, 213, 0.779);
+	box-shadow: 0 5px 11px rgba(0, 0, 0, 0.1), 0 4px 11px 0 rgba(0, 0, 0, 0.08);
+	opacity: 1;
+	top: 0;
+}
+.collapsible-tx h1{
+    font-family: 'Source Sans Pro', sans-serif;
+	margin: 10px;
+	padding: 15px 15px 0;
+	font-size: 30px;
+}
+.collapsible-tx h2{
+    font-family: 'Source Sans Pro', sans-serif;
+	margin: 10px;
+	padding: 15px 15px 0;
+	color: black;
+}
+.collapsible-tx p{
+	margin-top: 15px;
+	padding-left: 25px;
+	padding-right: 30px;
+	font-family: 'Inter', sans-serif;
+	font-size: 20px;
+}
+table.wikitable.roundedborder {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 5px;
+    border-radius: 11px;
+    margin-top: 15px;
+	margin-left: auto;
+    margin-right: auto;
+	font-size: 17px;
+}
+table.wikitable > tr > th, table.wikitable > tr > td, table.wikitable > * > tr > th, table.wikitable > * > tr > td {
+	font-family: 'Quicksand', sans-serif;
+    border: 1px solid #2a668b;
+    padding: 0.2em;
+    background-color: rgba(255,255,255,0.58);
+}
+table.wikitable2.roundedborder {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 5px;
+    border-radius: 11px;
+    margin-top: 15px;
+	margin-left: 18px;
+    margin-right: 18px;
+	font-size: 17px;
+}
+table.wikitable2 > tr > th, table.wikitable2 > tr > td, table.wikitable2 > * > tr > th, table.wikitable2 > * > tr > td {
+	font-family: 'Quicksand', sans-serif;
+    border: 1px solid #2a668b;
+    padding: 0.2em;
+    background-color: rgba(255,255,255,0.58);
+}
+.to-top{
+    background: orange;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #1f1f1f;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s;
+}
+.to-top.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+.sticky-sidebar{
+    background: white;
+    margin-top: 53px;
+    padding: 20px 30px 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0 12px 0 -6px #fa90a3;
+    position: fixed;
+    left: 72%;
+    width: 170px;
+}
+.sticky-sidebar h2, .sticky-sidebar > l > li > a{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+/*==footer==*/
+.footer-container{
+    width: 100vw;
+    background-color: #352F2F;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-social{
+    width: 25%;
+
+}
+.footer-social a{
+    color: white;
+    padding: 0 20px;
+    font-size: 25px;
+}
+.footer-middle{
+    width: 50%;
+    padding: 0;
+    text-align: center;
+    font-size: 20px;
+}
+.footer-middle h4{
+    color: white;
+}
+
+.footer-contact-us{
+    font-size: 20px;
+    width: 25%;
+    padding:0 20px;
+    text-align: right;
+}
+.footer-contact-us a{
+    color: white;
+}
+
